@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="movies.css"/>
+</head>
+<body>
+
+<header>
+    <h1>Movie Recommendation System</h1>
+</header>
+
+<div class="container">
+    <h2>Personalized Movie Recommendations</h2>
+
+    <label for="genre">Select Your Favorite Genre:</label>
+    <select id="genre" onchange="getRecommendations()">
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+    </select>
+
+    <div id="movie-list"></div>
+</div>
+
+<script src="movies.js"></script>
+
+</body>
+</html>
